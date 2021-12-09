@@ -1,0 +1,18 @@
+body{
+    background-image: url("https://wallpapercave.com/wp/LRxGqsU.jpg");
+    background-size: cover;
+    font-family: 'Special Elite', cursive;
+}
+.heading{
+    width: 80%;
+    font-size: 22px;
+    background-color: darkmagenta;
+}
+.name_of_object, #result_object_name, #result_oject_name{
+    color: red;
+}
+#camera{
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px;
+}

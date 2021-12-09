@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Project - 103,104 & 105</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <script src="Main.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <center>
+            <div class="container">
+                <b class="name_of_objects">
+                <h1 style="font-weight: bolder;font-style: italic;color: aliceblue;">FACE RECOGNITION WEB APP</h1>
+                <br><br>
+                <p style="font-weight: bolder;font-style: italic;color: aliceblue;">The model is trained to indentify the following objects:</p>
+                <br><br>
+                <h4 class="btn btn-defulat heading" style="font-weight: bolder;font-style: italic;color: rgb(7, 7, 6);">Vase</h4>
+                <br>
+                <h4 class="btn btn-defulat heading" style="font-weight: bolder;font-style: italic;color: rgb(7, 7, 6);">MousePad</h4>
+                <br>
+                <h4 class="btn btn-defulat heading" style="font-weight: bolder;font-style: italic;color: rgb(7, 7, 6);">Mouse</h4>
+                <br>
+                <h4 class="btn btn-defulat heading" style="font-weight: bolder;font-style: italic;color: rgb(7, 7, 6);">Me</h4>
+                <br>
+                </b>
+                <br>
+                <label>Webcam View :-</label>
+                <div id="camera"></div>
+                <br><br>
+                <div id="result"></div>
+                <br><br>
+                <button onclick="take_snapshot();" class="btn btn-info">Capture Image</button>
+                <br><br>
+                <button onclick="check();" class="btn btn-success">Identify Image</button> 
+                <br><br>
+                <p style="font-size: 22px;">Object: <span id="result_object_name"></span></p>
+                <p style="font-size: 22px;">Accuracy: <span id="result_object_accuracy"></span></p>
+            </div>
+        </center>
+    </body>
+</html>
